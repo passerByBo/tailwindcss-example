@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Button from '@/components/button/index.vue';
-import { pipe } from 'fp-ts/lib/function';
+import { pipe } from 'fp-ts/function';
 import { useRouter } from 'vue-router';
 const router = useRouter();
 
