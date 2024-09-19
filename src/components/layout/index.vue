@@ -2,12 +2,10 @@
 import Header from '@/components/header/index.vue';
 </script>
 <template>
-  <div class="flex h-screen flex-col bg-black text-purple-200">
+  <div class="flex flex-col text-purple-200">
     <Header></Header>
-    <div class="bg-dbg mt-px flex-1 overflow-hidden">
-      <RouterView v-slot="{ Component }">
-        <component :is="Component" />
-      </RouterView>
+    <div class="flex-1 bg-slate-500">
+      <RouterView />
     </div>
   </div>
 </template>

@@ -1,7 +1,28 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from '@/components/button/index.vue';
+import { pipe } from 'fp-ts/lib/function';
+import { useRouter } from 'vue-router';
+const router = useRouter();
+
+const mapPath = (name: string) => ({ path: `/${name}` });
+
+const handleClick = (name: string) => pipe(name, mapPath, router.push);
+</script>
 
 <template>
-  <div class="">
-    123123123
+  <div class="flex flex-wrap gap-4">
+    <Button @click="handleClick('demo01')">demo01</Button>
+    <Button @click="handleClick('demo02')">demo02</Button>
+    <Button @click="handleClick('demo03')">demo03</Button>
+    <Button @click="handleClick('demo04')">demo04</Button>
+    <Button @click="handleClick('demo05')">demo05</Button>
+    <Button @click="handleClick('demo06')">demo06</Button>
+    <Button @click="handleClick('demo07')">demo07</Button>
+    <Button @click="handleClick('demo08')">demo08</Button>
+    <Button @click="handleClick('demo09')">demo09</Button>
+    <Button @click="handleClick('demo10')">demo10</Button>
+    <Button @click="handleClick('demo11')">demo11</Button>
+    <Button @click="handleClick('demo12')">demo12</Button>
+    <Button @click="handleClick('demo13')" :disabled="true">demo13</Button>
   </div>
 </template>
