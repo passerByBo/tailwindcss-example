@@ -77,7 +77,7 @@ const handleClick = (event: MouseEvent) =>
           () => console.log('按钮点击成功')
         )
       )
-    )
+    ),
   );
 </script>
 

@@ -10,11 +10,11 @@ const handleClick = (name: string) => pipe(name, mapPath, router.push);
 </script>
 
 <template>
-  <div class="flex flex-wrap gap-4">
-    <Button @click="handleClick('demo01')">demo01</Button>
-    <Button @click="handleClick('demo02')">demo02</Button>
-    <Button @click="handleClick('demo03')">demo03</Button>
-    <Button @click="handleClick('demo04')">demo04</Button>
+  <div class="flex flex-wrap gap-4 text-primary">
+    <Button type="primary" @click="handleClick('demo01')">伪类/伪元素</Button>
+    <Button type="success" @click="handleClick('demo02')">指令样式</Button>
+    <Button type="warning" @click="handleClick('demo03')">响应式设计</Button>
+    <Button type="danger" @click="handleClick('demo04')">demo04</Button>
     <Button @click="handleClick('demo05')">demo05</Button>
     <Button @click="handleClick('demo06')">demo06</Button>
     <Button @click="handleClick('demo07')">demo07</Button>
