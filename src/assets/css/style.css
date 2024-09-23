@@ -11,7 +11,7 @@
 /* 组合式组件样式 */
 @layer components {
   .table-box-auto {
-    @apply bg-white w-[1014px] h-auto border border-solid border-[#e9e9e9] mx-auto;
+    @apply mx-auto h-auto w-[1014px] border border-solid border-[#e9e9e9] bg-white;
   }
   .vertical-text {
     writing-mode: vertical-rl;

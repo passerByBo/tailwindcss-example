@@ -31,7 +31,8 @@ export default [
   // 配置以禁用 ESLint 中与 Prettier 冲突的规则
   {
     rules: {
-      ...eslintConfigPrettier.rules // 禁用所有与 Prettier 冲突的规则
+      ...eslintConfigPrettier.rules, // 禁用所有与 Prettier 冲突的规则,
+      'vue/multi-word-component-names': ['off', {}]
     }
   }
 ];

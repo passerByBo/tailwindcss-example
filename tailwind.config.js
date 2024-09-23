@@ -1,24 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       height: {
-        '300': '75rem',
-        '325': '81.25rem'
+        300: '75rem',
+        325: '81.25rem'
       },
       colors: {
-        dbg: '#f4f5f7',
-        mbg: '#f5f9ff',
-        success: '#24C366',
-        success_5: '#b3e19d',
-        failed: '#E65545',
-        failed_5: '#fab6b6',
-        warning: 'FF543A',
-        imp: '222222',
-        c33: '333333',
-        c26: '262626',
-        mid: '999999',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -52,10 +41,6 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
         }
-      },
-      flex: {
-        '2': '2 2 0%',
-        '3': '3 3 0%'
       },
       fontFamily: {
         simHei: ['SimHei']
@@ -91,7 +76,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 };

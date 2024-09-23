@@ -1,30 +1,22 @@
 <template>
-  <div class="size-full bg-slate-200">
+  <div class="size-full">
+    <div class="w-20 bg-primary text-center text-primary-foreground">hello</div>
     <div
-      class="group/item h-52 w-52 cursor-pointer bg-sky-500 hover:bg-sky-700"
+      class="mt-4 h-[13%] w-1/2 !bg-primary bg-amber-600/50 px-10 text-primary-foreground"
     >
-      <p class="text-white group-hover/item:text-pink-300">第一行</p>
-      <p class="text-white group-hover/item:text-pink-600">第二行</p>
+      hello 基础
     </div>
-    <ul>
-      <li class="bg-primary even:bg-amber-500" v-for="i in 4">第{{ i }}个</li>
-    </ul>
-    <div class="h-48 w-48 bg-[rgb(111,111,111)]"></div>
-    <input
-      type="text"
-      value="tbone"
-      class="`disabled:shadow-none` mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm placeholder-slate-400 shadow-sm invalid:border-pink-500 invalid:text-pink-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 disabled:border-slate-200 disabled:bg-slate-50 disabled:text-slate-500"
-    />
-
-    <form>
-      <label class="block">
-        <span class="block text-sm font-medium text-slate-700">邮箱：</span>
-        <input type="email" class="peer" />
-        <p class="invisible mt-2 text-sm text-pink-600 peer-invalid:visible">
-          请输入正确的邮箱
-        </p>
-      </label>
-    </form>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+//  colors: {
+//         customColor: 'rgba(255, 87, 34, <alpha-value>)', // 定义自定义颜色
+//       },
+// colors: {
+//         customColor: {
+//           DEFAULT: '#ff5722',  // 默认颜色
+//           50: 'rgba(255, 87, 34, 0.5)',  // 50% 透明度
+//           75: 'rgba(255, 87, 34, 0.75)', // 75% 透明度
+//         },
+//       },
+</script>
