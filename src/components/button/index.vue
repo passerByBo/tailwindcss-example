@@ -3,7 +3,7 @@
   <button
     :class="[
       // 'rounded-lg px-4 py-2 font-semibold transition-all duration-200 ease-in-out',
-      buttonClasses,
+      buttonClasses
       // {
       //   'cursor-not-allowed opacity-50': disabled,
       //   'hover:opacity-90 active:opacity-80': !disabled
@@ -20,7 +20,7 @@
 import { computed } from 'vue';
 import * as O from 'fp-ts/Option';
 import * as E from 'fp-ts/Either';
-import { identity, pipe } from 'fp-ts/function';
+import { pipe } from 'fp-ts/function';
 import { cva } from 'class-variance-authority';
 
 type Props = {
@@ -67,8 +67,10 @@ const buttonClass = cva(
       type: {
         default: 'bg-gray-200 text-black hover:bg-gray-300 active:bg-gray-400',
         primary: 'bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700',
-        success: 'bg-green-500 text-white hover:bg-green-600 active:bg-green-700',
-        warning: 'bg-yellow-500 text-white hover:bg-yellow-600 active:bg-yellow-700',
+        success:
+          'bg-green-500 text-white hover:bg-green-600 active:bg-green-700',
+        warning:
+          'bg-yellow-500 text-white hover:bg-yellow-600 active:bg-yellow-700',
         danger: 'bg-red-500 text-white hover:bg-red-600 active:bg-red-700'
       },
       disabled: {

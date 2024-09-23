@@ -6,6 +6,7 @@
     >
     <input
       placeholder="请输入"
+      disabled
       class="mt-2 placeholder:italic placeholder:text-slate-400 focus:outline-lime-600"
     />
 
@@ -58,6 +59,7 @@
         </p>
       </label>
     </form>
+    <div class="table-box-auto">123</div>
   </div>
 </template>
 <script setup lang="ts"></script>

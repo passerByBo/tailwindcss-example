@@ -1,6 +1,10 @@
 <template>
-  <div class="size-full">
-    <div class="w-20 bg-primary text-center text-primary-foreground">hello</div>
+  <div class="bg-orange-400/3 size-full">
+    <div
+      class="w-20 bg-primary text-center text-primary-foreground before:content-['']"
+    >
+      hello
+    </div>
     <div
       class="mt-4 h-[13%] w-1/2 !bg-primary bg-amber-600/50 px-10 text-primary-foreground"
     >
