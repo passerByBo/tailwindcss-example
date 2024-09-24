@@ -4,6 +4,11 @@ export default {
   darkMode: 'selector',
   presets: [require('./tailwind.color'), require('./tailwind.custom')],
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  // 开启相对配置文件  相对路径
+  // conteng: {
+  //   files: [],
+  //   reactive: true
+  // },
   theme: {
     // 自定义根据现有的扩展
     // margin: ({ theme }) => ({
