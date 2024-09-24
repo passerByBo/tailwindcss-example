@@ -1,12 +1,34 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  // darkMode: 'media',
+  darkMode: 'selector',
+  presets: [require('./tailwind.color'), require('./tailwind.custom')],
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+    // 自定义根据现有的扩展
+    // margin: ({ theme }) => ({
+    //   auto: 'auto',
+    //   ...theme('spacing')
+    // }),
+    // backgroundSize: ({ theme }) => ({
+    //   auto: 'auto',
+    //   cover: 'cover',
+    //   contain: 'contain',
+    //   ...theme('spacing')
+    // }),
     extend: {
+      // supports: {
+      //   grid: 'display: grid'
+      // },
+      // 自定义扩展比例
+      aspectRatio: {
+        '4/3': '4 / 3'
+      },
       height: {
         300: '75rem',
         325: '81.25rem'
       },
+
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -73,10 +95,11 @@ export default {
         }
       },
       animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-down': 'accordion-down 2s ease-out',
+        'accordion-up': 'accordion-up 2s ease-out',
+        'spin-slow': 'spin 3s linear infinite'
       }
     }
   },
-  plugins: []
+  plugins: [require('tailwindcss-animated')]
 };

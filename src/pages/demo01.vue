@@ -10,6 +10,18 @@
     >
       hello 基础
     </div>
+    <div
+      class="my-4 aspect-video w-40 bg-[url('https://img0.baidu.com/it/u=3422287847,344441285&fm=253&fmt=auto&app=138&f=JPEG?w=604&h=500')]"
+    ></div>
+    <div
+      class="my-4 size-40 border-2 border-solid border-sky-500 bg-gradient-to-r from-indigo-500"
+    ></div>
+    <div
+      class="size-40 border-2 border-solid bg-gradient-to-r from-cyan-500 to-blue-500"
+    ></div>
+    <div
+      class="h-10 w-1/2 border-2 border-solid bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+    ></div>
   </div>
 </template>
 <script setup lang="ts">

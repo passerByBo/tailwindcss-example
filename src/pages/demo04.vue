@@ -1,7 +1,7 @@
 <template>
   <div class="size-full bg-slate-200 p-4">
     <div
-      class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+      class="mx-auto max-w-md overflow-hidden rounded-xl bg-white md:max-w-2xl"
     >
       <div class="md:flex">
         <div class="md:shrink-0">
@@ -29,6 +29,10 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="bg-error md:max-lg:bg-warning 2xl:bg-success mx-auto mt-20 size-40 rounded shadow-b lg:max-2xl:bg-primary"
+    ></div>
   </div>
 </template>
 <script setup lang="ts"></script>

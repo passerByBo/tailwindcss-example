@@ -46,3 +46,13 @@
 }
 
 /* 直接覆盖而没有在项目中具体指定的 */
+
+.card-custom {
+  width: theme(spacing.80);
+  height: theme(spacing.80);
+  background-color: theme(colors.primary.DEFAULT);
+}
+
+.margin-top-10 {
+  @apply mt-10;
+}

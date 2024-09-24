@@ -20,6 +20,7 @@
     --input: 240 5.9% 90%;
     --ring: 346.8 77.2% 49.8%;
     --radius: 10px;
+    --radix-accordion-content-height: 300px;
   }
 
   .dark {
@@ -42,5 +43,6 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 346.8 77.2% 49.8%;
+    --radix-accordion-content-height: 300px;
   }
 }

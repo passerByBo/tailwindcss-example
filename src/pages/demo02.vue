@@ -6,7 +6,6 @@
     >
     <input
       placeholder="请输入"
-      disabled
       class="mt-2 placeholder:italic placeholder:text-slate-400 focus:outline-lime-600"
     />
 
@@ -60,6 +59,17 @@
       </label>
     </form>
     <div class="table-box-auto">123</div>
+    <ul
+      role="list"
+      class="list-disc space-y-3 pl-5 text-slate-400 marker:text-sky-400"
+    >
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <div class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
+      <p>自定义鼠标划选的内容</p>
+    </div>
   </div>
 </template>
 <script setup lang="ts"></script>
