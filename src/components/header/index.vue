@@ -24,8 +24,8 @@ const handleClick = (name: string) => pipe(name, mapPath, router.push);
     <Button @click="handleClick('demo11')">其他</Button>
     <Button @click="handleClick('demo12')">动画和过度</Button>
     <Button @click="handleClick('demo13')">自定义</Button>
-    <Button @click="handleClick('demo13')" :disabled="true"
-      >按钮不可点击</Button
-    >
+    <Button @click="handleClick('demo14')">ts案例1</Button>
+    <Button @click="handleClick('demo15')">ts案例2</Button>
+    <Button :disabled="true">按钮不可点击</Button>
   </div>
 </template>
